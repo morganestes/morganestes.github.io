@@ -4,11 +4,36 @@
 	<meta charset="UTF-8">
 	<title>Morgan Estes on GitHub</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
     <style>
     body {
 padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-padding-bottom: 60px;
 } 
+ul.columns {
+  -moz-column-width: 250px;
+  -moz-column-count: 1;
+  -moz-column-gap: 20px;
+  -moz-column-rule-color: #eeeeee;
+  -moz-column-rule-style: solid;
+  -moz-column-rule-width: 1px;
+  -webkit-column-width: 250px;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 20px;
+  -webkit-column-rule-color: #eeeeee;
+  -webkit-column-rule-style: solid;
+  -webkit-column-rule-width: 1px;
+  column-width: 250px;
+  column-count: 1;
+  column-gap: 20px;
+  column-rule-color: #eeeeee;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+}
+.unstyled.columns li {
+  display: inline-block;
+  width: 96px;
+}
     </style>
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +63,6 @@ padding-bottom: 60px;
          <a href="https://github.com/morganestes" class="brand">Morgan Estes on GitHub</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><img src="http://www.gravatar.com/avatar/bf93a52d29dd4a57b6649d9e9f8ec0d9" height="40" width="40" alt="gravatar" class="hidden-phone hidden-tablet">&emsp;</li>
               <li class="active"><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -62,8 +86,8 @@ padding-bottom: 60px;
    <div id="contact">
      <h2>Contact Me</h2>
      <p>I’m all around the web:</p>
-     <ul class="unstyled">
-       <li><a href="http://twitter.com/morganestes"><i class="icon-retweet"></i>&thinsp;Twitter (@morganestes)</a></li>
+     <ul class="unstyled columns">
+       <li><a href="http://twitter.com/morganestes"><i class="icon-retweet"></i>&thinsp;Twitter</a></li>
        <li><a href="http://github.com/morganestes" title="My GitHub profile"><i class="icon-info-sign"></i>&thinsp;GitHub</a></li>
        <li><a href="http://forrst.me/morganestes" title="My Forrst profile"><i class="icon-leaf"></i>&thinsp;Forrst</a></li>
        <li><a href="http://flickr.com/photos/morganestes" title="My photos on Flickr"><i class="icon-camera"></i>&thinsp;Flickr</a></li>
@@ -71,47 +95,48 @@ padding-bottom: 60px;
        <li><a href="http://facebook.com/morganestes"><i class="icon-share"></i>&thinsp;Facebook</a></li>
        <li><a href="http://gplus.to/morganestes"><i class="icon-plus"></i>&thinsp;Google+</a></li>
        <li><a href="http://morganestes.wordpress.com" title="My not-regularly-updated blog"><i class="icon-tags"></i>&thinsp;WordPress</a></li>
-       <li><a href="mailto:morgan.estes@gmail.com?subject=Hi%20from%20your%20GitHub%20page"><i class="icon-envelope"></i>&thinsp;Good old-fashioned email</a></li>
+       <li><a href="mailto:morgan.estes@gmail.com?subject=Hi%20from%20your%20GitHub%20page"><i class="icon-envelope"></i>&thinsp;Email</a></li>
      </ul>
    </div>
    <div id="projects">
       <h2>Projects I’ve worked on <small> and websites I’ve built</small></h2>
        <ul class="thumbnails">
-         <li class="span3"><a class="thumbnail" href="http://am.okbar.org/2010/"><img src="/img/thumbnails/am2010_mini.jpg" alt="OBA Annual Meeting 2010"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://am.okbar.org/2011/"><img src="/img/thumbnails/am2011_mini.jpg" alt="OBA Annual Meeting 2011"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/heroes/"><img src="/img/thumbnails/heroes_mini.jpg" alt="Oklahoma Lawyers for America's Heroes"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/lawday/2010/"><img src="/img/thumbnails/lawday2010_mini.jpg" alt="Law Day 2010"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/lawday/2011"><img src="/img/thumbnails/lawday2011_mini.jpg" alt="Law Day 2011"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/lawday/2012/"><img src="/img/thumbnails/lawday2012_mini.jpg" alt="Law Day 2012"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.lhlfoundation.org"><img src="/img/thumbnails/lhlfoundation.org_mini.jpg" alt="Lawyers Helping Lawyers Foundation, Inc."></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/solo/2010/"><img src="/img/thumbnails/solo2010_mini.jpg" alt="OBA Solo and Small Firm Conference 2010"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/solo/2011/"><img src="/img/thumbnails/solo2011_mini.jpg" alt="OBA Solo and Small Firm Conference 2011"></a></li>
-         <li class="span3"><a class="thumbnail" href="htp://www.okbar.org/solo/2012/"><img src="/img/thumbnails/solo2012_mini.jpg" alt="OBA Solo and Small Firm Conference 2012"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/techfair"><img src="/img/thumbnails/techfair_mini.jpg" alt="OBA Tech Fair 2009"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/women09/"><img src="/img/thumbnails/women09_mini.jpg" alt="OBA Women in Law Conference 2009"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/women/2010/"><img src="/img/thumbnails/women2010_mini.jpg" alt="OBA Women in Law Conference 2010"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/women/2011/"><img src="/img/thumbnails/women2011_mini.jpg" alt="OBA Women in Law Conference 2011"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://www.threadsokc.org"><img src="/img/thumbnails/threadsokc_mini.jpg" alt="Threads of Compassion OKC"></a></li>
-         <li class="span3"><a href="http://www.unpackingtheboxes.com" class="thumbnail"><img src="/img/thumbnails/boxes_mini.jpg" alt="Unpacking the Boxes"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://am.okbar.org/2010/"><img src="/img/grey.gif" data-original="/img/thumbnails/am2010_mini.jpg" alt="OBA Annual Meeting 2010"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://am.okbar.org/2011/"><img src="/img/grey.gif" data-original="/img/thumbnails/am2011_mini.jpg" alt="OBA Annual Meeting 2011"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/heroes/"><img src="/img/grey.gif" data-original="/img/thumbnails/heroes_mini.jpg" alt="Oklahoma Lawyers for America's Heroes"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/lawday/2010/"><img src="/img/grey.gif" data-original="/img/thumbnails/lawday2010_mini.jpg" alt="Law Day 2010"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/lawday/2011"><img src="/img/grey.gif" data-original="/img/thumbnails/lawday2011_mini.jpg" alt="Law Day 2011"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/lawday/2012/"><img src="/img/grey.gif" data-original="/img/thumbnails/lawday2012_mini.jpg" alt="Law Day 2012"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.lhlfoundation.org"><img src="/img/grey.gif" data-original="/img/thumbnails/lhlfoundation.org_mini.jpg" alt="Lawyers Helping Lawyers Foundation, Inc."></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/solo/2010/"><img src="/img/grey.gif" data-original="/img/thumbnails/solo2010_mini.jpg" alt="OBA Solo and Small Firm Conference 2010"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/solo/2011/"><img src="/img/grey.gif" data-original="/img/thumbnails/solo2011_mini.jpg" alt="OBA Solo and Small Firm Conference 2011"></a></li>
+         <li class="span3"><a class="thumbnail" href="htp://www.okbar.org/solo/2012/"><img src="/img/grey.gif" data-original="/img/thumbnails/solo2012_mini.jpg" alt="OBA Solo and Small Firm Conference 2012"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/techfair"><img src="/img/grey.gif" data-original="/img/thumbnails/techfair_mini.jpg" alt="OBA Tech Fair 2009"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/women09/"><img src="/img/grey.gif" data-original="/img/thumbnails/women09_mini.jpg" alt="OBA Women in Law Conference 2009"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/women/2010/"><img src="/img/grey.gif" data-original="/img/thumbnails/women2010_mini.jpg" alt="OBA Women in Law Conference 2010"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.okbar.org/women/2011/"><img src="/img/grey.gif" data-original="/img/thumbnails/women2011_mini.jpg" alt="OBA Women in Law Conference 2011"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://www.threadsokc.org"><img src="/img/grey.gif" data-original="/img/thumbnails/threadsokc_mini.jpg" alt="Threads of Compassion OKC"></a></li>
+         <li class="span3"><a href="http://www.unpackingtheboxes.com" class="thumbnail"><img src="/img/grey.gif" data-original="/img/thumbnails/boxes_mini.jpg" alt="Unpacking the Boxes"></a></li>
        </ul>
        <h3>Logos</h3>
        <ul class="thumbnails">
-         <li class="span3"><a href="http://db.tt/WAJtR7Dv" class="thumbnail"><img src="/img/thumbnails/wowlogo.png" alt="Wonder of Worship Logo in CSS"></a></li>
-         <li class="span3"><a href="http://am.okbar.org/2010/" class="thumbnail"><img src="/img/thumbnails/AM106.png" alt="OBA Annual Meeting 2010 logo"></a></li>
-         <li class="span3"><a href="http://www.okbar.org/heroes/" class="thumbnail"><img src="/img/thumbnails/heroes-logo.png" alt="Oklahoma Lawyers for America's Heroes logo"></a></li>
-         <li class="span3"><a href="http://facebook.com/threadsokc" class="thumbnail"><img src="/img/thumbnails/threads-fb.jpg" alt="Threads OKC Facebook page logo"></a></li>
+         <li class="span3"><a href="http://db.tt/WAJtR7Dv" class="thumbnail"><img src="/img/grey.gif" data-original="/img/thumbnails/wowlogo.png" alt="Wonder of Worship Logo in CSS"></a></li>
+         <li class="span3"><a href="http://am.okbar.org/2010/" class="thumbnail"><img src="/img/grey.gif" data-original="/img/thumbnails/AM106.png" alt="OBA Annual Meeting 2010 logo"></a></li>
+         <li class="span3"><a href="http://www.okbar.org/heroes/" class="thumbnail"><img src="/img/grey.gif" data-original="/img/thumbnails/heroes-logo.png" alt="Oklahoma Lawyers for America's Heroes logo"></a></li>
+         <li class="span3"><a href="http://facebook.com/threadsokc" class="thumbnail"><img src="/img/grey.gif" data-original="/img/thumbnails/threads-fb.jpg" alt="Threads OKC Facebook page logo"></a></li>
        </ul>
        <h3>Inactive sites <small>no longer maintained or active</small></h3>
        <ul class="thumbnails">
-         <li class="span3"><a class="thumbnail"><img src="/img/thumbnails/toogood_mini.jpg" alt="Too Good to be Through" title="inactive site"></a></li>
-         <li class="span3"><a class="thumbnail"><img src="/img/thumbnails/gator_mini.jpg" alt="Gator Elevator" title="inactive site"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://estestech.net/"><img src="/img/thumbnails/estestech_mini.jpg" alt="Estes Technology Group" title="inactive site"></a></li>
-         <li class="span3"><a class="thumbnail" href="http://students.oc.edu/morgan.estes/"><img src="/img/thumbnails/oc_mini.jpg" alt="OC student resume" title="inactive site"></a></li>
+         <li class="span3"><a class="thumbnail"><img src="/img/grey.gif" data-original="/img/thumbnails/toogood_mini.jpg" alt="Too Good to be Through" title="inactive site"></a></li>
+         <li class="span3"><a class="thumbnail"><img src="/img/grey.gif" data-original="/img/thumbnails/gator_mini.jpg" alt="Gator Elevator" title="inactive site"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://estestech.net/"><img src="/img/grey.gif" data-original="/img/thumbnails/estestech_mini.jpg" alt="Estes Technology Group" title="inactive site"></a></li>
+         <li class="span3"><a class="thumbnail" href="http://students.oc.edu/morgan.estes/"><img src="/img/grey.gif" data-original="/img/thumbnails/oc_mini.jpg" alt="OC student resume" title="inactive site"></a></li>
        </ul>
      </div>
      </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.lazyload.min.js"></script>
     <script>
     $(function() {
       $('.nav').scrollspy();
@@ -120,7 +145,7 @@ padding-bottom: 60px;
         $altText = $that.attr('alt');
 
         $that.attr('title', $altText);
-      }).tooltip();
+      }).tooltip().lazyload();
     });
     </script>
 </body>

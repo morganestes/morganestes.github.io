@@ -101,7 +101,11 @@ padding-bottom: 60px;
     $(function() {
       $('.nav').scrollspy();
       $('a.thumbnail img').each(function() {
-        $(this).attr('title', $(this).attr('alt'));
+        var $that = $(this),
+            $altText = $that.attr('alt');
+
+        $that.attr('title', $altText);
+        $that.wrap('<figure><figcaption>'+$altText+'</figcaption></figure>');
       }).tooltip();
     });
     </script>

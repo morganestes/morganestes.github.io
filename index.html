@@ -144,8 +144,8 @@ ul.columns {
         $that = $(this);
         $altText = $that.attr('alt');
 
-        $that.attr('title', $altText);
-      }).tooltip().show().lazyload({ threshold : 300 });
+        $that.attr('title', $altText).show();
+      }).tooltip().lazyload({ threshold : 300 });
     });
     </script>
 </body>

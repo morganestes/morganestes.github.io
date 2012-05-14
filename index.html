@@ -100,12 +100,17 @@ padding-bottom: 60px;
     <script>
     $(function() {
       $('.nav').scrollspy();
+      $('a.thumbnail').each(function() {
+        var $that = $(this),
+            $altText = $that.attr('alt');
+
+        $that.wrap('<figure><figcaption>'+$altText+'</figcaption></figure>');
+      });
       $('a.thumbnail img').each(function() {
         var $that = $(this),
             $altText = $that.attr('alt');
 
         $that.attr('title', $altText);
-        $that.wrap('<figure><figcaption>'+$altText+'</figcaption></figure>');
       }).tooltip();
     });
     </script>

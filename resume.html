@@ -1,48 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Morgan Estes on GitHub</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-
-    <style>
+<meta charset="UTF-8">
+<title>Morgan Estes’ Resume</title>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<style>
     body {
 padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 } 
-ul.columns {
-  -moz-column-width: 250px;
-  -moz-column-count: 1;
-  -moz-column-gap: 20px;
-  -moz-column-rule-color: #eeeeee;
-  -moz-column-rule-style: solid;
-  -moz-column-rule-width: 1px;
-  -webkit-column-width: 250px;
-  -webkit-column-count: 1;
-  -webkit-column-gap: 20px;
-  -webkit-column-rule-color: #eeeeee;
-  -webkit-column-rule-style: solid;
-  -webkit-column-rule-width: 1px;
-  column-width: 250px;
-  column-count: 1;
-  column-gap: 20px;
-  column-rule-color: #eeeeee;
-  column-rule-style: solid;
-  column-rule-width: 1px;
-}
-.unstyled.text li {
-  display: inline-block;
-  width: 96px;
-}
+
 #about {
   border-right: 1px #eee;
 }
 .phone:before { content: "\260F"; }
 
-    </style>
-    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
+@media all {
+    .page-break,
+    .print-only {
+        display: none;
+    }
+}
+
+@media print {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+        #content {
+        background: white;
+        color: black; 
+        font: 12pt "Times New Roman", Times, serif;
+    }
+    .page-header h1 {
+        margin-bottom: .15in;
+    }
+    h2 {
+        padding-bottom: 1px;
+        border-bottom: 1px solid gray;
+    }
+    .print-only {
+        display: block;
+    }
+    a:link, a:visited {
+        color: inherit;
+        font-weight: bold;
+    }
+    a:link:after, a:visited:after {
+        content: " [" attr(href) "] ";
+        color: #eee;
+        font-size: 90%;
+    }
+    address a:link:after,
+    address a:visited:after {
+        content: "";
+        margin: 1pt 0;
+    }
+    .navbar {
+        display: none;
+        visibility: hidden;
+        height: 0;
+    }
+    .page-break {
+        display: block;
+         page-break-before: always;
+    }
+    /* remove well styling on printed version */
+    .well {
+        min-height: 20px;
+        padding: 0;
+        margin-bottom: 0;
+        background-color: #fff;
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+</style>
+
+<script>
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-31671626-1']);
@@ -81,11 +123,16 @@ ul.columns {
     <div id="content" class="container">
 <div class="page-header">
 <h1>Morgan W. Estes</h1>
-<address>524 Harding Pl.<br>
-Edmond, OK 73013</address>
-
-<p><a href="mailto:morgan.estes@gmail.com" title="email"><i class="icon-envelope"></i>&thinsp;morgan.estes@gmail.com</a><br>
-<a href="http://morganestes.github.com" title="website"><i class="icon-user"></i>&thinsp;morganestes.github.com</a></p>
+<div class="row">
+    <address class="span3">
+        524 Harding Pl.<br>
+        Edmond, OK 73013
+    </address>
+    <address class="span3">
+        <a href="mailto:morgan.estes@gmail.com" title="email me"><i class="icon-envelope"></i>&thinsp;morgan.estes@gmail.com</a><br>
+        <a href="http://morganestes.github.com" title="Online portfolio and resume"><i class="icon-user"></i>&thinsp;http://morganestes.github.com</a>
+    </address>
+</div>
 </div>
 
 <div id="experience" class="well">
@@ -95,45 +142,60 @@ Edmond, OK 73013</address>
 <li>Writing and editing content for websites and email newsletters.</li>
 <li>Creating specialized websites with a variety of technologies to promote special events and programs.</li>
 <li>Creating and implementing plans to make sites easier to use based on data gathered from analytics.</li>
+<li>Establishing and integrating social networks into websites and marketing campaigns.</li>
 </ul>
 </div>
 
 <div id="projects">
 <h2>Projects</h2>
-<p>Portfolio available online at <a href="http://morganestes.github.com" title="website">morganestes.github.com</a>.</p>
+<p class="print-only">Portfolio available online at <a href="http://morganestes.github.com" title="Online portfolio and resume">morganestes.github.com</a>.</p>
 
 <h3>Work-related</h3>
 <ul>
-<li>Managed, wrote/edited articles for, and maintained a 6,000+ page website for the 17,000-member professional association of Oklahoma attorneys.</li>
+<li>Managed, wrote/edited articles for, and maintained a <a href="http://www.okbar.org/" rel="nofollow" title="OBA website">6,000-plus page website</a> for the 17,000-member professional association of Oklahoma attorneys.</li>
 <li>Over the course of three years, built 15 websites using open source and custom frameworks built on HTML, CSS (LESS), PHP, jQuery, and MySQL.</li>
 <li>Designed and created the logo for the Oklahoma Bar Association program Oklahoma Lawyers for America’s Heroes, which has been used in all marketing materials for this statewide program.</li>
+<li>Helped three departments establish a presence on social networks, and trained them on best practices for using them to promote their work and interact with others.</li>
 </ul>
 
 <h3>Personal</h3>
 <ul>
-<li>Built and maintain the website for <a href="http://www.threadsokc.org">Threads of Compassion OKC</a>, a community program to assist victims of sexual assault.</li>
-<li>Built the webite for <a href="http://www.unpackingtheboxes.com">Unpacking the Boxes</a>, a community-based welcome program for women new to Edmond/OKC.</li>
-<li>Contributed a <a href="https://github.com/morganestes/sublime-recess">plugin package of Twitter Recess</a> for the Sublime Text Editor.</li>
-<li>Creating a <a href="/h5-lightbox">jQuery plugin</a> to create modal windows from images that takes advantage of the new HTML5 <code>data</code> attribute.</li>
+<li>Built and maintain the website for <a href="http://www.threadsokc.org" title="Threads of Compassion website">Threads of Compassion OKC</a>, a community program to assist victims of sexual assault.</li>
+<li>Helped established the Facebook page for <a href="http://facebook.com/threadsokc" title="Threads of Compassion on Facebook">Threads of Compassion</a> and for <a href="http://facebook.com/ochousing" title="OC Housing on Facebook">OC Residence Life</a>. Created profile image for OC Residence Life.</li>
+
+<li>Built the webite for <a href="http://www.unpackingtheboxes.com" title="Unpacking the Boxes website">Unpacking the Boxes</a>, a community-based welcome program for women new to Edmond/OKC.</li>
+<li>Contributed a <a href="https://github.com/morganestes/sublime-recess" title="Git repository for sublime-recess plugin">plugin package of Twitter Recess</a> for the Sublime Text Editor.</li>
+<li>Creating a <a href="http://morganestes.github.com/h5-lightbox" title="GitHub page for h5-lightbox jQuery plugin">jQuery plugin</a> to create modal windows from images that takes advantage of the new HTML5 <code>data</code> attribute.</li>
 <li>Built a web-based touchscreen application used by college students in evaluating and selecting housing options. It was used by the OC Office of Residence Life for three years and required annual maintenance on both hardware and software.</li>
 </ul>
 </div>
-
+<div class="page-break"></div>
 <div id="education">
-<h2>Education</h2>
-<p><strong>Oklahoma Christian University</strong>, Edmond, OK<br>
+<h2>Education and Certifications</h2>
+<p><b>Oklahoma Christian University</b>, Edmond, OK<br>
 College of Professional Studies, 2004&ndash;2008<br>
 B.S. in Liberal Studies</p>
+<p>
+<b>Microsoft Corporation</b><br>
+<i>Microsoft Certified Professional</i>, 2007
+<ul id="mcp">
+    <li><a href="http://www.microsoft.com/learning/en/us/certification/mcitp.aspx" data-content="Achieved 06/29/2007" title="MCTS - Windows Vista Configuration">Technology Specialist</a></li>
+    <li><a href="http://www.microsoft.com/learning/en/us/certification/mcdst.aspx" title="MCDST - Windows XP" data-content="Achieved 08/02/2007">Desktop Support Technician</a></li>
+</ul><!-- / -->
+</p>
 </div>
 
 <div id="work">
 <h2>Work Experience</h2>
 <section id="oba">
-<p><strong>Oklahoma Bar Association</strong>, 2009&ndash;2012 <br>
-<em>Web Services Coordinator</em> and <em>Front-end Web Developer</em></p>
+<p><b>Oklahoma Bar Association</b>, 2009&ndash;2012 <br>
+<i>Web Services Coordinator</i> and <i>Front-end Web Developer</i>
+</p>
 <ul>
-<li>Maintained the 6,000+ page website for the 17,000-member professional association of Oklahoma attorneys.</li>
-<li>Managed five web servers and two database servers for development and production environments.</li>
+    <li>First person selected to serve in newly created position of Web Services Coordinator.</li>
+<li>Maintained <a href="http://www.okbar.org/" rel="nofollow" title="OBA Website">the 6,000-plus page website</a> for the 17,000-member professional association of Oklahoma attorneys.</li>
+<li>Introduced concept of using microsites to promote special events put on by various departments. Previously, the association used the structure of the main website to report on events rather than promoting them as distinct brands.</li>
+<li>Managed five Apache web servers and two MySQL database servers for development, staging, and production environments.</li>
 <li>Implemented style guides for content providers and for coding standards.</li>
 <li>Aided various departments in the creation and use of social media networks.</li>
 <li>Introduced the use of analytics to track usage and shape the direction of website optimization.</li>
@@ -141,25 +203,25 @@ B.S. in Liberal Studies</p>
 </section>
 
 <section id="oc">
-<p><strong>Oklahoma Christian University</strong>, 2005&ndash;2008 <br>
-<em>Resident Director</em>, 2007&ndash;2008</p>
+<p><b>Oklahoma Christian University</b>, 2005&ndash;2008 <br>
+<i>Resident Director</i></p>
 <ul>
 <li>Managed a three-story, 110-resident dorm &mdash; ensuring residents had a safe and secure environment in which to live and study while in college.</li>
 <li>Planned, organized, and conducted monthly events for residents and their guests.</li>
 <li>Counseled and supervised 2 Resident Assistants and 10 receptionists.</li>
 </ul>
 
-<p><em>IT Services Call Center Specialist II/Student Support Technician I/Network Services Technician</em>, 2005&ndash;2007</p>
+<p><i>IT Services Call Center Specialist II</i>, <i>Student Support Technician I</i>, and <i>Network Services Technician</i></p>
 <ul>
-<li>Fielded incoming calls to technical support hotline, created ticket, and provided support to users. Able to solve the majority of issues with the first phone call.</li>
-<li>Educated faculty, staff, and students on common problems &mdash; resulting in reduced instances of ticket escalation to higher level technicians.</li>
+<li>Fielded incoming calls to technical support hotline, created tickets, and provided support to users. Able to solve the majority of issues within the first few minutes of contact.</li>
+<li>Educated faculty, staff, and students on common problems &mdash; resulting in reduced instances of ticket escalation and shorter turnaround times on basic issues.</li>
 <li>Provided support services to a 2,000-user campus network; supported MS Windows operating system, MS Office application suite, and standard images for approximately 2000 users.</li>
 </ul>
 </section>
 
 <section id="navy">
-<p><strong>U.S. Navy</strong>, 1993&ndash;2006 <br>
-<em>Operations Specialist</em></p>
+<p><b>U.S. Navy</b>, 1993&ndash;2006 <br>
+<i>Operations Specialist</i></p>
 <ul>
 <li>Served in a variety of roles ranging from watch stander to librarian to Officer of the Deck Underway.</li>
 <li>Often selected to positions reserved for pay grades higher than my own because of recognized leadership and technical abilities.</li>
@@ -170,6 +232,10 @@ B.S. in Liberal Studies</p>
 </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-
+    <script>
+$(function(){
+    $('#mcp a').popover();
+});
+    </script>
 </body>
 </html>

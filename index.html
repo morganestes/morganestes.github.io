@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<title>Morgan Estes on GitHub</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -37,7 +37,10 @@ ul.columns {
 #about {
   border-right: 1px #eee;
 }
-.phone:before { content: "\260F"; }
+[class$="-icon"] {display:inline-block;width:14px;height:14px;line-height:14px;vertical-align:text-top; }
+.phone-icon:before { content: "\260F"; }
+.coffee-icon span { text-indent: -999em; }
+.coffee-icon { content: url(/img/coffee-icon.png); }
 
     </style>
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
@@ -89,12 +92,13 @@ ul.columns {
        <p>Looking for a well-rounded web developer to join your team?</p>
        <p>I’m your guy!</p>
        <a href="/resume.html" class="btn btn-primary"><i class="icon-file icon-white"></i>&thinsp;View my resume</a>
+       <a title="Let’s chat!" data-content="Call Morgan at 405-520-0641 to schedule some coffee talk." class="btn phone"><span class="phone-icon"></span>&thinsp;Call me. We’ll grab some <span class="coffee-icon"><span>coffee</span></span> and chat.</a>
      </div>
      <div class="well visible-phone">
        <h2>I’m available for work!</h2>
        <p>Looking for a well-rounded web developer to join your team?</p>
        <p>I’m your guy!</p>
-       <a href="tel:+14055200641" title="Call me" class="btn btn-primary"><span class="phone"></span>&thinsp;Call me</a>
+       <a href="tel:+14055200641" title="Call me" class="btn btn-primary"><span class="phone-icon"></span>&thinsp;Call me</a>
        <a href="/resume.html" class="btn"><i class="icon-file"></i>&thinsp;View my resume</a>
        
      </div>
@@ -164,6 +168,13 @@ ul.columns {
     <script>
     $(function() {
       $('.nav').scrollspy();
+      $('.phone').click(function(el) {
+        el = $(this);
+        el.popover({
+          'placement': 'top',
+          'trigger': 'manual' //hover|focus|manual
+        }).popover('toggle');
+      });
       $('a.thumbnail img').each(function() {
         $that = $(this);
         $altText = $that.attr('alt');

@@ -38,17 +38,20 @@ ul.columns {
   border-right: 1px #eee;
 }
 [class$="-icon"] {display:inline-block;width:14px;height:14px;line-height:14px;vertical-align:text-top; }
-.phone-icon:before { content: "\260F"; }
+.phone-icon:before { content: "\260F";}
+.text .phone-icon:before {color: black; padding-right: 4px;}
 .coffee-icon span { text-indent: -999em; }
 .coffee-icon { content: url(/img/coffee-icon.png); }
 
     </style>
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
+<script>
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-31671626-1']);
+  _gaq.push(['_setDomainName', 'morganestes.me']);
+  _gaq.push(['_setAllowLinker', true]);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -68,7 +71,7 @@ ul.columns {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-         <a href="https://github.com/morganestes" class="brand">Morgan Estes on GitHub</a>
+         <a href="http://www.morganestes.me" class="brand">MorganEstes.me</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#home">Home</a></li>
@@ -100,7 +103,6 @@ ul.columns {
        <p>I’m your guy!</p>
        <a href="tel:+14055200641" title="Call me" class="btn btn-primary"><span class="phone-icon"></span>&thinsp;Call me</a>
        <a href="/resume.html" class="btn"><i class="icon-file"></i>&thinsp;View my resume</a>
-       
      </div>
      
      <div class="row">
@@ -115,15 +117,15 @@ ul.columns {
      <p>I’m all around the web:</p>
      <ul class="unstyled text">
        <li><a href="http://twitter.com/morganestes"><i class="icon-retweet"></i>&thinsp;Twitter</a></li>
-       <li><a href="http://github.com/morganestes" title="My GitHub profile"><i class="icon-info-sign"></i>&thinsp;GitHub</a></li>
+       <li><a href="http://github.com/morganestes" title="My GitHub profile"><i class="icon-list"></i>&thinsp;GitHub</a></li>
        <li><a href="http://forrst.me/morganestes" title="My Forrst profile"><i class="icon-leaf"></i>&thinsp;Forrst</a></li>
        <li><a href="http://flickr.com/photos/morganestes" title="My photos on Flickr"><i class="icon-camera"></i>&thinsp;Flickr</a></li>
        <li><a href="http://www.linkedin.com/in/morganestes" title="My LinkedIn profile"><i class="icon-user"></i>&thinsp;LinkedIn</a></li>
        <li><a href="http://facebook.com/morganestes"><i class="icon-share"></i>&thinsp;Facebook</a></li>
        <li><a href="http://gplus.to/morganestes"><i class="icon-plus"></i>&thinsp;Google+</a></li>
-       <li><a href="http://morganestes.wordpress.com" title="My not-regularly-updated blog"><i class="icon-tags"></i>&thinsp;WordPress</a></li>
-       <li><a href="mailto:morgan.estes@gmail.com?subject=Hi%20from%20your%20GitHub%20page"><i class="icon-envelope"></i>&thinsp;Email</a></li>
-       <li><a href="tel:+14055200641" title="Call me" class="phone visible-phone">Phone</a></li>
+       <li><a href="http://blog.morganestes.me" title="My not-regularly-updated blog"><i class="icon-tags"></i>&thinsp;WordPress</a></li>
+       <li><a href="mailto:morgan.estes@gmail.com"><i class="icon-envelope"></i>&thinsp;Email</a></li>
+       <li><a href="tel:+14055200641" title="Call me" class="phone-icon visible-phone">Phone</a></li>
      </ul>
    </div>
  </div>

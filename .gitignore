@@ -35,3 +35,5 @@ publish
 .idea
 marketing/fonts
 
+# Apache files in development
+.htaccess

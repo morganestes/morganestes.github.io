@@ -1,0 +1,60 @@
+body {
+  padding-top: 60px;
+  /* 60px to make the container go all the way to the bottom of the topbar */
+
+}
+
+ul.columns {
+  -webkit-column-rule-color: #eeeeee;
+  column-rule-width: 1px;
+  -webkit-column-rule-style: solid;
+  -moz-column-width: 250px;
+  -webkit-column-rule-width: 1px;
+  -moz-column-gap: 20px;
+  column-width: 250px;
+  -moz-column-rule-style: solid;
+  -webkit-column-width: 250px;
+  column-rule-style: solid;
+  column-rule-color: #eeeeee;
+  column-gap: 20px;
+  column-count: 1;
+  -webkit-column-count: 1;
+  -moz-column-rule-width: 1px;
+  -moz-column-rule-color: #eeeeee;
+  -moz-column-count: 1;
+  -webkit-column-gap: 20px;
+}
+
+.unstyled.text li {
+  display: inline-block;
+  width: 96px;
+}
+
+#about {
+  border-right: 1px #eee;
+}
+
+[class$="-icon"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  vertical-align: text-top;
+}
+
+.phone-icon:before {
+  content: "\260F";
+}
+
+.text .phone-icon:before {
+  padding-right: 4px;
+  color: black;
+}
+
+.coffee-icon span {
+  text-indent: -999em;
+}
+
+.coffee-icon {
+  content: url(/img/coffee-icon.png);
+}

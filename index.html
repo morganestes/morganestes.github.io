@@ -118,14 +118,15 @@ ul.columns {
      <ul class="unstyled text">
        <li id="twitter"><a href="http://twitter.com/morganestes"><i class="icon-retweet"></i>&thinsp;Twitter</a></li>
        <li id="github"><a href="http://github.com/morganestes"><i class="icon-list"></i>&thinsp;GitHub</a></li>
-       <li><a href="http://forrst.me/morganestes"><i class="icon-leaf"></i>&thinsp;Forrst</a></li>
+       <li id="forrst"><a href="http://forrst.me/morganestes"><i class="icon-leaf"></i>&thinsp;Forrst</a></li>
        <li id="flickr"><a href="http://flickr.com/photos/morganestes"><i class="icon-camera"></i>&thinsp;Flickr</a></li>
-       <li><a href="http://www.linkedin.com/in/morganestes"><i class="icon-user"></i>&thinsp;LinkedIn</a></li>
-       <li><a href="http://facebook.com/morganestes"><i class="icon-share"></i>&thinsp;Facebook</a></li>
-       <li><a href="http://gplus.to/morganestes"><i class="icon-plus"></i>&thinsp;Google+</a></li>
-       <li><a href="http://blog.morganestes.me"><i class="icon-tags"></i>&thinsp;WordPress</a></li>
-       <li><a href="mailto:morgan.estes@gmail.com"><i class="icon-envelope"></i>&thinsp;Email</a></li>
-       <li><a href="tel:+14055200641" class="phone-icon visible-phone">Phone</a></li>
+       <li id="linkedin"><a href="http://www.linkedin.com/in/morganestes"><i class="icon-user"></i>&thinsp;LinkedIn</a></li>
+       <li id="facebook"><a href="http://facebook.com/morganestes"><i class="icon-share"></i>&thinsp;Facebook</a></li>
+       <li id="googleplus"><a href="http://gplus.to/morganestes"><i class="icon-plus"></i>&thinsp;Google+</a></li>
+       <li id="wordpress"><a href="http://morganestes.wordpress.com"><i class="icon-tags"></i>&thinsp;WordPress</a></li>
+       <li id="tumblr"><a href="http://morganestes.tumblr.com/"><i class="icon-pencil"></i>&thinsp;Tumblr</a></li>
+       <li id="email"><a href="mailto:morgan.estes@gmail.com"><i class="icon-envelope"></i>&thinsp;Email</a></li>
+       <li id="telephone"><a href="tel:+14055200641" class="phone-icon visible-phone">Phone</a></li>
      </ul>
    </div>
  </div>
@@ -165,12 +166,30 @@ ul.columns {
        </ul>
      </div>
      </div>
-     <div id="flickr-holder" class="hidden"></div>
-     <div id="flickr-random" class="hidden"></div>
+     <div id="flickr-random" class="hidden"><img src="/img/transparent.gif" /></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-    $(function() {
+    /**
+     * Gets just the hostname from a URL,
+     * stripping away the protocol and subdirectories
+     * @param  {string} url The full URL.
+     * @return {string || object}     Returns the hostname as a string, or NULL.
+     */
+    function get_hostname(url) {
+      var m = ((url||'')+'').match(/^https?:\/\/[^/]+/);
+
+      if (m === null) {
+        if (((url||'')+'').match(/^(mailto|tel):/)) {
+          m = '';
+        }
+        return m;
+      }
+      return m ? m[0] : null;
+    }
+    </script>
+    <script>
+    jQuery(function($) {
       $('.nav').scrollspy();
       $('.phone').click(function(el) {
         el = $(this);
@@ -185,10 +204,23 @@ ul.columns {
 
         $that.attr('title', $altText);
       }).tooltip();
+
+      //favicons
+      $('#contact li a').each(function() {
+        var href = $(this).attr('href'),
+            host = get_hostname(href).replace('http://','').replace('https://','').replace('www.','').replace('morganestes.','');
+
+            if (host !== '' || host !== null) {
+              var icon = $('<img/>').attr('src', 'http://www.google.com/s2/favicons?domain='+ host);
+              console.log(host);
+              $(this).children('i[class^="icon-"]').html(icon).attr("class","icon-");
+            }
+      });
+
     });
     </script>
-    <script src="/js/twitter.js" async defer></script>
-    <script src="/js/flickr.js" async defer></script>
-     <script src="/js/github.js" async defer></script>
+    <script src="/js/twitter.js" async></script>
+    <script src="/js/flickr.js" async></script>
+    <script src="/js/github.js" async></script>
 </body>
 </html>

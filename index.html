@@ -170,25 +170,6 @@ ul.columns {
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script>
-    /**
-     * Gets just the hostname from a URL,
-     * stripping away the protocol and subdirectories
-     * @param  {string} url The full URL.
-     * @return {string || object}     Returns the hostname as a string, or NULL.
-     */
-    function get_hostname(url) {
-      var m = ((url||'')+'').match(/^https?:\/\/[^/]+/);
-
-      if (m === null) {
-        if (((url||'')+'').match(/^(mailto|tel):/)) {
-          m = '';
-        }
-        return m;
-      }
-      return m ? m[0] : null;
-    }
-    </script>
-    <script>
     jQuery(function($) {
       $('.nav').scrollspy();
       $('.phone').click(function(el) {
@@ -204,23 +185,11 @@ ul.columns {
 
         $that.attr('title', $altText);
       }).tooltip();
-
-      //favicons
-      $('#contact li a').each(function() {
-        var href = $(this).attr('href'),
-            host = get_hostname(href).replace('http://','').replace('https://','').replace('www.','').replace('morganestes.','');
-
-            if (host !== '' || host !== null) {
-              var icon = $('<img/>').attr('src', 'http://www.google.com/s2/favicons?domain='+ host);
-              console.log(host);
-              $(this).children('i[class^="icon-"]').html(icon).attr("class","icon-");
-            }
-      });
-
     });
     </script>
-    <script src="/js/twitter.js" async></script>
-    <script src="/js/flickr.js" async></script>
-    <script src="/js/github.js" async></script>
+    <script src="/js/twitter.js" async defer></script>
+    <script src="/js/flickr.js" async defer></script>
+    <script src="/js/github.js" async defer></script>
+    <script src="/js/favicons.js" async defer></script>
 </body>
 </html>

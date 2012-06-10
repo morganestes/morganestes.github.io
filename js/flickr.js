@@ -6,18 +6,20 @@ $(document).ready(function() {
 
 function popPic(data) {
 
-    // Start putting together the HTML string
-    var htmlString = "",
-        numRand = Math.floor(Math.random() * data.items.length),
+    // Count the number of images returned in the JSON reponse
+    // select one at random and start working on it.
+    var numRand = Math.floor(Math.random() * data.items.length),
         pic = data.items[numRand];
 
-    $("<img/>").attr({
+    // Get the data from the JSON info
+    // Create an image element and put it in a hidden div
+    $("#flickr-random img").attr({
         src: pic.media.m,
         title: pic.title,
         alt: pic.title
-    }).appendTo("#flickr-random");
+    });
 
-    // display in a popover
+    // Get the generated image and display in a popover
     $('#flickr a').popover({
         html: true,
         placement: 'right',

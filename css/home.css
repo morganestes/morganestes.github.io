@@ -1,28 +1,25 @@
 body {
-  padding-top: 60px;
   /* 60px to make the container go all the way to the bottom of the topbar */
 
+  padding-top: 60px;
 }
 
 ul.columns {
-  -webkit-column-rule-color: #eeeeee;
+  -moz-column-count: 1;
   column-rule-width: 1px;
-  -webkit-column-rule-style: solid;
-  -moz-column-width: 250px;
+  column-count: 1;
+  -webkit-column-rule-color: #eee;
+  -webkit-column-gap: 20px;
   -webkit-column-rule-width: 1px;
+  -moz-column-width: 250px;
+  column-rule-style: solid;
+  column-rule-color: #eee;
+  column-gap: 20px;
   -moz-column-gap: 20px;
   column-width: 250px;
-  -moz-column-rule-style: solid;
   -webkit-column-width: 250px;
-  column-rule-style: solid;
-  column-rule-color: #eeeeee;
-  column-gap: 20px;
-  column-count: 1;
+  -webkit-column-rule-style: solid;
   -webkit-column-count: 1;
-  -moz-column-rule-width: 1px;
-  -moz-column-rule-color: #eeeeee;
-  -moz-column-count: 1;
-  -webkit-column-gap: 20px;
 }
 
 .unstyled.text li {
@@ -33,6 +30,8 @@ ul.columns {
 #about {
   border-right: 1px #eee;
 }
+
+/* Custom icons */
 
 [class$="-icon"] {
   display: inline-block;

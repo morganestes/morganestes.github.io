@@ -19,10 +19,28 @@ function popPic(data) {
         alt: pic.title
     });
 
+    // Don't popover on small screens
+    if ($('html').hasClass('screen-small')) {
+        return;
+    }
+    else {
+
     // Get the generated image and display in a popover
     $('#flickr a').popover({
         html: true,
-        placement: 'right',
+        placement: function() {
+            var _where = 'left';
+            if($('html').hasClass('screen-phone')) {
+                _where = 'top';
+            }
+            else if($('html').hasClass('screen-tablet')) {
+                _where = 'left';
+            }
+            else {
+                _where = 'right';
+            }
+            return _where;
+        },
         title: function() {
             return $('#flickr-random img').attr('title');
         },
@@ -30,4 +48,5 @@ function popPic(data) {
             return $('#flickr-random').html();
         }
     });
+}
 }

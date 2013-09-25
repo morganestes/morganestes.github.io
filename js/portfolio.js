@@ -95,7 +95,7 @@ var Github = function () {
             contentString += 'URL: <a href="' + link + '">' + link + '</a>';
         });
 
-        $("#github a").popover({
+        $('[data-service="github"] a').popover({
             title:'Latest action on GitHub',
             content:function () {
                 return contentString;
@@ -155,8 +155,17 @@ var Github = function () {
  **/
 var Twitter = function () {
     var username = 'morganestes',
-        twitter_url = "http://twitter.com/statuses/user_timeline/" + username + ".json?callback=?";
+        twitter_url_old = "http://twitter.com/statuses/user_timeline/" + username + ".json?callback=?",
+        twitter_url = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=" + username + "&count=1";
 
+	/**
+	 * Retrieves the requested data from Twitter using v1 of the API.
+	 *
+	 * @deprecated Use v1.1 oAuth
+	 * @todo  Rewrite with oAuth to work with Twitter v1.1 API.
+	 *
+	 * @return object
+	 */
     function getTweets() {
         return $.getJSON(twitter_url, showLatestTweet);
     }
@@ -177,7 +186,7 @@ var Twitter = function () {
              * @uses Popover
              * @requires WidthClass
              */
-            $("#twitter a").popover({
+            $('[data-service="twitter"] a').popover({
                 html:true,
                 placement:'right',
                 title:function () {
@@ -260,7 +269,7 @@ var Flickr = function () {
              * @uses Popover
              * @requires WidthClass
              */
-            $('#flickr a').popover({
+            $('[data-service="flickr"] a').popover({
                 html:true,
                 placement:function () {
                     var _where = 'left';

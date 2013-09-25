@@ -20,10 +20,12 @@ ul.columns {
   column-rule-style: solid;
   column-rule-width: 1px;
 }
+
 .unstyled.text li {
   display: inline-block;
   width: 96px;
 }
+
 #about {
   border-right: 1px #eee;
 }
@@ -36,15 +38,27 @@ ul.columns {
   line-height: 14px;
   vertical-align: text-top;
 }
-.phone-icon:before { content: "\260F";}
 
-.text .phone-icon:before {
-  color: black;
+.phone-icon {
+  &:before {
+    content: "\260F";
+
+    .text & {
+      color: black;
   padding-right: 4px;
+    }
+  }
 }
 
-.coffee-icon span { text-indent: -999em; }
-.coffee-icon { content: url(/img/coffee-icon.png); }
+
+.coffee-icon {
+  content: url(/img/coffee-icon.png);
+
+ > span {
+    text-indent: -999em;
+  }
+}
+
 
 .blog-icon {
   content: url(/img/blog-icon-box-orange-16.png);

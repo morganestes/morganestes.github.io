@@ -50,12 +50,12 @@ ul.columns {
   color: black;
 }
 
-.coffee-icon span {
-  text-indent: -999em;
-}
-
 .coffee-icon {
   content: url(/img/coffee-icon.png);
+}
+
+.coffee-icon > span {
+  text-indent: -999em;
 }
 
 .blog-icon {

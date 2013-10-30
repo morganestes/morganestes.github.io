@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Morgan Estes’ Resume</title>
+<meta name="application-name" content="The fantastic resume of Morgan Estes.">
+<meta name="description" content="You want me to work with you? Fantastic! Contact me at http://morganestes.me.">
+<meta name="author" content="Morgan Estes. But you already knew that by now, didn't you?">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/resume.css">
 <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <script>
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-31671626-1']);
   _gaq.push(['_setDomainName', 'morganestes.me']);
@@ -22,7 +23,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 </head>
 <body data-spy="scroll">
@@ -73,14 +73,23 @@
 </div>
 
 <div id="experience" class="well well-small">
-<h2>Professional Experience <small>Front-end Web Developer</small></h2>
-<ul>
-<li>Building websites based on my own and others’ designs.</li>
-<li>Writing and editing content for websites and email newsletters.</li>
-<li>Creating specialized websites with a variety of technologies to promote special events and programs.</li>
-<li>Creating and implementing plans to make sites easier to use based on data gathered from analytics.</li>
-<li>Establishing and integrating social networks into websites and marketing campaigns.</li>
-</ul>
+    <h2>I build websites.</h2>
+    <h3>Sometimes I'm a <small>Front-end Web Developer</small></h3>
+    <ul>
+        <li>Content? Written <strong>and</strong> edited.</li>
+        <li>HTML? Marked it up.</li>
+        <li>CSS? Styled it, often with LESS hoopla than needed.</li>
+        <li>JavaScript? Dream in it (nightmares, often), and can even spell it correctly.</li>
+        <li>CMS? WordPress ALL THE THINGS!</li>
+    </ul>
+    <h3>Sometimes I'm a <small>Systems Admin</small></h3>
+    <ul>
+        <li>Apache? Served it. Nginx? Learning it.</li>
+        <li>Linux? Ubuntu, Centos, RedHat. Hosted 'em.</li>
+        <li>DNS? I can name names.</li>
+        <li>DBs? MySQL, Percona, MariaDB. Structured <em>and</em> Queried 'em.</li>
+        <li>Email? Nah, just pay someone else to host that madness.</li>
+    </ul>
 </div>
 
 <div id="projects">
@@ -112,18 +121,20 @@
 <h3>Oklahoma Christian University <small>Edmond, OK</small></h3>
 <p>College of Professional Studies, 2004&ndash;2008<br>
 B.S. in Liberal Studies</p>
-
-<h3>Microsoft Corporation</h3>
-<i>Microsoft Certified Professional</i>, 2007
-<ul id="mcp">
-    <li><a href="http://www.microsoft.com/learning/en/us/certification/mcitp.aspx" data-content="Achieved 06/29/2007" title="MCTS - Windows Vista Configuration">Technology Specialist</a></li>
-    <li><a href="http://www.microsoft.com/learning/en/us/certification/mcdst.aspx" title="MCDST - Windows XP" data-content="Achieved 08/02/2007">Desktop Support Technician</a></li>
-</ul>
-</p>
 </div>
 
 <div id="work">
 <h2>Work Experience</h2>
+<section id="golf-tailor">
+    <h3>Golf Tailor LLC <small>Jan. 2013 &ndash; </small></h3>
+    <i>Web Developer, Systems Administrator</i>
+    <p>Working with a small, agile start-up marketing golf products online. I spend the majority of my days keeping all things tech afloat. I also get to build and maintain about a dozen WordPress-based websites running custom themes and plugins.</p>
+</section>
+<section id="orionnet">
+    <h3>OrionNet Systems LLC <small>Aug. 2012 &ndash; Nov. 2012</small></h3>
+    <i>JavaScript/iOS Developer</i>
+    <p>Picked up an existing <a href="https://itunes.apple.com/us/app/thinkhealth-touch/id582691549?mt=8" title="ThinkHealth-Touch for iPad">PhoneGap iPad project</a> with an <em class="sarcasm">amazing</em> code base and cranked away, fixing major and minor bugs, adding extra HIPPA-compliant security, and getting it prepped for delivery to the App Store.</p>
+</section>
 <section id="oba">
 <h3>Oklahoma Bar Association <small>Feb. 2009 &ndash; May 2012</small></h3>
 <i>Web Services Coordinator</i> and <i>Front-end Web Developer</i>
@@ -179,6 +190,7 @@ B.S. in Liberal Studies</p>
 </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/signet.min.js"></script>
     <script>
 $(function(){
     $('#mcp a').popover();

@@ -1,10 +1,10 @@
 
-#contact i[class^="icon-"],
+#contact a > [class^="icon-"],
 .icon-gravatar {
     background-image: url(/img/sprites.png);
 }
 
-#contact [class^="icon-"] {
+#contact a > [class^="icon-"] {
     height: 16px;
     width: 16px;
 }

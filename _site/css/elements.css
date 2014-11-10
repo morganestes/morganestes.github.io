@@ -1,0 +1,33 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+
+ul.columns {
+  column-rule-style: solid;
+  -webkit-column-gap: 50px;
+  column-rule-color: #eeeeee;
+  -webkit-column-rule-color: #eeeeee;
+  column-gap: 50px;
+  -webkit-column-rule-style: solid;
+  column-count: 0;
+  -webkit-column-rule-width: 1px;
+  column-width: 250px;
+  -moz-column-count: 0;
+  -moz-column-rule-color: #eeeeee;
+  -moz-column-rule-width: 1px;
+  -webkit-column-count: 0;
+  -moz-column-rule-style: solid;
+  -moz-column-gap: 50px;
+  -moz-column-width: 250px;
+  column-rule-width: 1px;
+  -webkit-column-width: 250px;
+}

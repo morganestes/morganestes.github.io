@@ -1,0 +1,79 @@
+@media screen {
+  body {
+    padding-top: 60px;
+    /* 60px to make the container go all the way to the bottom of the topbar */
+  
+  }
+  #about {
+    border-right: 1px #eee;
+  }
+  .phone:before {
+    content: "\260F";
+  }
+  .page-break,
+  .print-only {
+    display: none;
+  }
+}
+
+@media print {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  #content {
+    font: 12pt "Times New Roman", Times, serif;
+    color: black;
+    background: white;
+  }
+  .page-header h1 {
+    margin-bottom: .15in;
+  }
+  h2 {
+    padding-bottom: 1px;
+    border-bottom: 1px solid gray;
+  }
+  .print-only {
+    display: block;
+  }
+  a:link,
+  a:visited {
+    font-weight: bold;
+    color: inherit;
+  }
+  a:link:after,
+  a:visited:after {
+    font-size: 90%;
+    color: #eee;
+    content: " [" attr(href) "] ";
+  }
+  address a:link:after,
+  address a:visited:after {
+    margin: 1pt 0;
+    content: "";
+  }
+  .navbar {
+    display: none;
+    height: 0;
+    visibility: hidden;
+  }
+  .page-break {
+    display: block;
+    page-break-before: always;
+  }
+  .well {
+    /* remove well styling on printed version */
+  
+    min-height: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: #fff;
+    border: none;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  }
+}

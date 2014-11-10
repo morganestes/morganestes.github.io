@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/morganestes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.morganestes.me
+  * I am morganestes (https://keybase.io/morganestes) on keybase.
+  * I have a public key with fingerprint FEC6 4E0B 7773 7647 FA0C  5B34 BB57 9336 DD3E FAB9
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "fec64e0b77737647fa0c5b34bb579336dd3efab9",
+            "host": "keybase.io",
+            "key_id": "bb579336dd3efab9",
+            "uid": "ea4a780da6588633b3267aba9a1d0d00",
+            "username": "morganestes"
+        },
+        "service": {
+            "hostname": "www.morganestes.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1403022511,
+    "expire_in": 157680000,
+    "prev": "516b0cd1dbb088423e322cc59c3cdae16df1fed13fb8e603040abded713f5109",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.22
+Comment: https://keybase.io/crypto
+
+yMHyAnicbZFfTBxVFMZ3+dewwYQUJDREIGNIo2628/fPriAuJLV9QSmkpgS73Dv3
+zjIFZpaZYZd1AxshaIzxbTWECKXwgC+wtQkJD6KAWgwsiU3ciIE28ILxQVrigxVF
+ubOhiQ/el5v7fb/znZtzvn0u3+VxN3TYG4sv7QnuzZXjAVfbdG86QUEDxalAgurB
+uUvV9DA2I6am21SAUrEi8piGkiRxkshLKqAVAXI8hILk5zgRIQ6rAPopL9VtWE4F
+iYHAwj7NIBp5hDRE1P/hB3IGBjyQZBoBUZBlkeMgx4oSgMAPGEQjmnZAC5s66MOE
+7jPMMNCxZWOLGvJSxIhqCjESue5nUCwW8/0H9BHRS0VMwzYUo5f43bYdCTjldjyS
+4zEMnSWFoKYjMgBSEMWmpRk6FWAIqdiaE83wNEezrMAwXgoPRjQThzSHECRRpslx
+2uAoiRQYEdIKYhCEtCzzLIc5llUUwa9wCgKYEZHKqBgxnAplLJJQngYQYSQRRWBo
+ZzwW7tcNKuAn3wRhEmlpYR3YAyamhtZWOgtcbo+rqDDPWaHLU1z6bLGJqXN/ewrf
+O+x6+1b3z/Lir9v/JB/mzX958FPT1vTh0O956YZgcHRh5KDli7qjyvj5dbk2XVP2
+eO7Pu8D7fGl+Yf1+eyaVz829OLvjmVoKtu+XFVdj/+6Vr/nPLq21JNX7vvLWlfHy
+yxn+xgdNv/xRUjG5+imcncj2rH80luayBxk9+FtcQR2xuus1J2MXJl6zP/8q+312
+p2Rk/d6/73dVvXnnLfds6wv9T7JvLL1bpQ4+bXllPrXwauqbIk3+sVlu/bB+mP2O
+en3v9njb1Y7aok9mmkH97nK28q/jxuWLBY+ajjamZyaTWx9fQ9upk9HOxuHqjM2/
+vLnVuFqdfIeN3nxQEc38cAomCBeM
+=H2mj
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/morganestes
+
+==================================================================

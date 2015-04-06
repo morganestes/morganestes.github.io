@@ -75,7 +75,7 @@ var Github = function () {
     var bitly_login = "morganestes",
         bitly_apikey = "R_bf730b3615bf021fd8c0a38634b151ee",
         github_username = "morganestes",
-        github_url = "https://github.com/" + github_username + ".json?callback=?";
+        github_url = "https://api.github.com/users/" + github_username + "/events/public";
 
     /**
      * Gets the latest action on a GitHub account's repositories,
@@ -89,10 +89,11 @@ var Github = function () {
         var contentString = "",
             action = data[0];
 
-        getShortUrl(action.url, bitly_login, bitly_apikey, function (link) {
-            contentString += "Type: " + action.type + '<br>';
-            contentString += "Repository: " + action.repository.name + '<br>';
-            contentString += 'URL: <a href="' + link + '">' + link + '</a>';
+        getShortUrl(action.payload.commits[0].url, bitly_login, bitly_apikey, function (link) {
+            contentString += '<h4 title="Repo:">' + action.repo.name + '</h4>';
+            contentString += '<p title="Message:">' + action.payload.commits[0].message + '</p>';
+            //contentString += "Type: " + action.type + '<br>';
+            //contentString += 'URL: <a href="' + link + '">' + link + '</a>';
         });
 
         $('[data-service="github"] a').popover({

@@ -1,4 +1,4 @@
-$.getJSON("https://github.com/morganestes.json?callback=?", showLatestAction);
+$.getJSON("https://api.github.com/users/morganestes/events/public/?callback=?", showLatestAction);
 
 /**
  * Gets the lastest action on a GitHub account's repositories,

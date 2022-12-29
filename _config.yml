@@ -1,0 +1,18 @@
+title: Morgan's Minimalist Project Page
+description: Bookmark this to keep an eye on my project updates!
+url: https://morganestes.me
+baseurl: ''
+theme_skin: blue
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+    - jekyll-minifier
+
+include: 
+  - .well-known
+
+exclude:
+  - docker-compose.yml

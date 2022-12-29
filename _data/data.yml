@@ -1,0 +1,108 @@
+name: Morgan Estes
+support_dark_mode: true
+fork: true
+
+# Sidebar
+contact:
+  email: hello@morganestes.com
+  github: morganestes
+  linkedin: morganestes
+  phone: 
+  gitlab: morganestes
+  twitter: morganestes
+  mastodon: @morgan@morganestes.me
+
+languages:
+  - idiom: English
+
+education:
+  - degree: BS in Liberal Studies
+    time: 2004-2008
+    university: Oklahoma Christian University
+
+skills:
+  - category: Backend
+    skill: 
+      - PHP
+      - Node.js
+      - WordPress
+  - category: Frontend
+    skill:
+      - HTML
+      - CSS
+      - Sass
+      - JavaScript
+      - React
+  - category: DevOps
+    skill:
+      - Docker
+      - Shell scripting
+      - DNS management 
+
+# Profile
+profile: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+  fugiat nulla pariatur.
+
+# Experience
+experience:
+  - role: Senior Developer
+    time: 20xx-Present
+    company: LocaliQ
+    details: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+      fugiat nulla pariatur.
+    technologies_used: | 
+      WordPress, PHP, Pantheon, Terminus, bash, JavaScript
+  
+  - role: Lead Developer
+    time: 20xx-20xx
+    company: BigWing
+    details: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+      fugiat nulla pariatur.
+    technologies_used: | 
+      WordPress, PHP, WP Engine, bash, JavaScript
+
+publications:
+  - title: Random title of paper. An interesting one.
+    link: "#"
+    authors: John E. Doe
+    conference: Some conference, 2016
+
+  - title: Second title of paper. An interesting one too.
+    link: "#"
+    authors: John E. Doe
+    conference: Some conference again, 2018
+
+projects:
+  - title: Cool Project 
+    link: #
+    details: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+      tempor incididunt ut labore et dolore magna aliqua.
+
+  - title: Cool Project 
+    link: #
+    details: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+      tempor incididunt ut labore et dolore magna aliqua.
+
+# Volunteering
+volunteering:
+  - time: 2009-Present
+    role: Web Developer
+    company: Threads of Compassion OKC
+    details: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

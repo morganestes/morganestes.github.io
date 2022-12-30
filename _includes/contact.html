@@ -36,11 +36,11 @@
                 {{contact.linkedin}}
             </a>
     </div>
-    {% endif %} {% if contact.mastodon %} {% assign m = contact.mastodon | split: "@" %}
+    {% endif %} {% if contact.mastodon %} {% assign m = contact.mastodon | split: "@" %}{% assign acct = m | slice: 0 %} {% assign instance = m | slice: 1 %}
     <div class="contact-item">
         <i data-feather="activity"></i>
-        <a href="https://{{m | slice: 1}}/@{{m | slice: 0}}">
-                @{{m | slice: 0}}@{{m | slice: 1}}
+        <a href="https://{{instance}/@{{acct}}">
+                @{{acct}}@{{instance}}
             </a>
     </div>
     {% endif %} {% if contact.twitter %}

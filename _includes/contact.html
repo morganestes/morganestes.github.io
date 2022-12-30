@@ -29,11 +29,29 @@
         </div>
     {% endif %}
 
+    {% if contact.gitlab %}
+        <div class="contact-item">
+            <i data-feather="gitlab"></i>
+            <a href="https://gitlab.com/{{contact.gitlab}}">
+                {{contact.gitlab}}
+            </a>
+        </div>
+    {% endif %}
+
     {% if contact.linkedin %}
         <div class="contact-item">
             <i data-feather="linkedin"></i>
             <a href="https://linkedin.com/in/{{contact.linkedin}}">
                 {{contact.linkedin}}
+            </a>
+        </div>
+    {% endif %}
+
+    {% if contact.mastodon %}
+        <div class="contact-item">
+            <i data-feather="mastodon"></i>
+            <a href="https://{{contact.mastodon.instance}}/@{{contact.mastodon.acct}}">
+                {{contact.mastodon.acct}}
             </a>
         </div>
     {% endif %}
@@ -47,13 +65,5 @@
         </div>
     {% endif %}
 
-    {% if contact.gitlab %}
-        <div class="contact-item">
-            <i data-feather="gitlab"></i>
-            <a href="https://gitlab.com/{{contact.gitlab}}">
-                {{contact.gitlab}}
-            </a>
-        </div>
-    {% endif %}
 </section>
 {% endif %}

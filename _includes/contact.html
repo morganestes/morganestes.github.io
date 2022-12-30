@@ -38,7 +38,7 @@
     </div>
     {% endif %} {% if contact.mastodon %} {% assign m = contact.mastodon | split: "@" %}{% assign acct = m | slice: 0 %} {% assign instance = m | slice: 1 %}
     <div class="contact-item">
-        <i><img alt="mastodon logo" src="{{'/assets/images/mastodon.svg' | absolute_url}}" /></i>
+        <img height="24" width="24" alt="mastodon logo" src="{{'/assets/images/mastodon.svg' | absolute_url}}" />
         <a href="https://{{instance}}/@{{acct}}">
                 @{{acct}}@{{instance}}
             </a>

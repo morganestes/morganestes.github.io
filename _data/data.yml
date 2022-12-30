@@ -10,10 +10,8 @@ contact:
   phone: 
   gitlab: morganestes
   twitter: morganestes
-  mastodon: 
-    - instance: mastodon.sdf.org
-    - acct: morganestes
-
+  mastodon: morganestes@mastodon.sdf.org
+   
 languages:
   - idiom: English
 

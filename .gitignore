@@ -38,3 +38,5 @@ marketing/fonts
 # Apache files in development
 .htaccess
 Gruntfile.js
+
+.history

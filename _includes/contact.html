@@ -40,8 +40,8 @@
     <div class="contact-item">
         {{contact.mastodon}}
         <i data-feather="activity"></i>
-        <a href="https://{{contact.mastodon.instance}}/@{{contact.mastodon.acct}}">
-                @{{contact.mastodon.acct}}@{{contact.mastodon.acct}}
+        <a href="https://{{contact.mastodon['instance']}}/@{{contact.mastodon['acct']}}">
+                @{{contact.mastodon['acct']}}@{{contact.mastodon['instance']}}
             </a>
     </div>
     {% endif %} {% if contact.twitter %}

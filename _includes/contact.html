@@ -39,7 +39,7 @@
     {% endif %} {% if contact.mastodon %} {% assign m = contact.mastodon | split: "@" %}{% assign acct = m | slice: 0 %} {% assign instance = m | slice: 1 %}
     <div class="contact-item">
         <i data-feather="activity"></i>
-        <a href="https://{{instance}/@{{acct}}">
+        <a href="https://{{instance}}/@{{acct}}">
                 @{{acct}}@{{instance}}
             </a>
     </div>

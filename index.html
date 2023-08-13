@@ -26,25 +26,18 @@
     <meta name="theme-color" content="#9480FF"/>
     <link rel="apple-touch-icon" href="https://cdn.glitch.me/efc5414a-882b-4708-af81-8461abbc1a82%2Ftouch-icon.png?v=1633521972305">
     
-    <!-- PWA setup - update public/sw.js if you add your own assets like a new .css file -->
-    <link rel="manifest" href="manifest.json">
-    <script>
-    if(location.protocol == 'http:') location.protocol = 'https:';
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then(reg => console.log('Service Worker registered', reg))
-        .catch(err => console.error('Service Worker **not** registered', err));
-    }
-    else {
-      console.warn('Service Worker not supported in this browser');
-    }    
-    </script>    
-    <!--- THEMES: in settings.json change 'glitch' to 'gallery', 'menu', or any other theme in the layout/themes folder --->
-    <link rel="stylesheet" type="text/css" href="/styles/themes/menu.css" />
+	<style>
+	#glitch-in-bio {
+		object-position: top;
+		object-fit: contain;
+		width: 100vw;
+		height: 100vh;
+	}
+	</style>
   </head>
   <body>
     <main>
-     <iframe src="https://puzzling-zinc-earthworm.glitch.me/" />
+     <iframe id="glitch-in-bio" src="https://puzzling-zinc-earthworm.glitch.me/" />
     </main>
   </body>
 </html>
